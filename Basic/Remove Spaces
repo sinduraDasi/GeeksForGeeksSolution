@@ -1,0 +1,11 @@
+class Solution:
+    def modify(self, s):
+        # code here
+        s=s.strip()
+        ans=''
+        for i in s:
+            if i==' ':
+                continue
+            else:
+                ans+=i
+        return ans
