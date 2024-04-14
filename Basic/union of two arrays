@@ -1,0 +1,10 @@
+def doUnion(self,a,n,b,m):
+        
+        #code here
+        s=set()
+        for i in a:
+            s.add(i)
+        for j in b:
+            s.add(j)
+        return len(s)
+        
