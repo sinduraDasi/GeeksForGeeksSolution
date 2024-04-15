@@ -1,0 +1,21 @@
+#User function Template for python3
+class Solution:
+    def countElements(self, a, b, n, query, q):
+        # code here
+        b.sort()
+        result = []
+        for i in range(q):
+            ele = a[query[i]]
+            
+            left, right = 0, n - 1
+            while left <= right:
+                mid = (left + right) // 2
+                if b[mid] == ele:
+                    left = mid + 1
+                elif b[mid] < ele:
+                    left = mid + 1
+                else:
+                    right = mid - 1
+            result.append(left)
+        
+        return result
