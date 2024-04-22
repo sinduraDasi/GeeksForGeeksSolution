@@ -1,0 +1,16 @@
+#User function Template for python3
+
+from collections import Counter
+
+class Solution:
+    def findMissing(self,a,b,n,m):
+        # d = Counter(b)
+        s=set()
+        l=[]
+        for i in b:
+            s.add(i)
+        for i in a:
+            if i not in s:
+                l.append(i)
+        return l
+
